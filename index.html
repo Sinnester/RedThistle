@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Derek Little                                       #
+#Date Created: 9/11/2022                                        #
+#Version: 0.1                                                 #
+#Date Last Modified: 9/28/2022                                #
+#Modified by: Derek Little                                          #
+#Modification log:  
+V0.0~ Added everything, still working on getting things working correctly.
+      I will be working on getting some pieces of this working.
+      Will get correct dates for mod logs. 
+V0.1~ Trying to add a slideshow into the index page. But can't get the pics to slide to the next.
+      Added an updated Jquery CDN but still wont work. I think it is in the JS
+V0.2~ Added a link to the new Feature page and removed the subscription page as its content was moved to the contact me page.                                       #
+ 
+------------------------------------------------------------------------------------------------------------------>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Thistle Consulting</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1 class="h1">Red Thistle Security Consulting</h1>
+    <h3>
+      Red Thistle's holistic security consulting services include current and
+      emerging threat assessments, policy review and development, and master
+      planning.
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, impedit
+      nihil reiciendis laudantium voluptatibus inventore est non porro assumenda
+      qui sapiente! Sint nobis atque esse, eveniet distinctio inventore dolores
+      fugit. Inventore placeat eos fuga doloribus adipisci nihil, laudantium
+      recusandae doloremque quia laborum sapiente illum maiores officiis quaerat
+      necessitatibus magnam molestias fugit dolor.
+    </p>
+    <main id="container">
+      <h2 id="caption">Protection from threats foreign and domestic</h2>
+
+      <img id="slide" src="images/Executive-Physical-Protection.jpg" alt="" />
+      <div id="slides">
+        <img
+          src="images/Executive-Physical-Protection.jpg"
+          alt="Executive Protection"
+        />
+        <img
+          src="images/Executive-Protection-Agent.jpg"
+          alt="High quality communication between agents"
+        />
+        <img
+          src="images/Security-arms-training.jpeg"
+          alt="An agent honing his craft"
+        />
+        <img
+          src="images/armed-security-guard-training.jpg"
+          alt="Close quarters combat training"
+        />
+        <img
+          src="images/executive_protection_01.png"
+          alt="Mobile Protection Unit"
+        />
+      </div>
+    </main>
+  </body>
+  <script src="js/slideshow.js"></script>
+</html>

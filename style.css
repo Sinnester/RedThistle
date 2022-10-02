@@ -1,0 +1,187 @@
+/*********************************************************************
+***
+*Original Author: Derek Little                                    *
+*Date Created: 9/11/2022                                       *
+*Version: V0.1                                                *
+*Date Last Modified: 9/28/2022                             *
+*Modified by: Derek Little                                          *
+*Modification log: 
+V0.0~ Added everything, still working on getting things working correctly.
+      I will be working on getting some pieces of this working.
+      Will get correct dates for mod logs.
+V0.1~ Added CSS specifically for FAQ page.
+V0.2~ Added CSS for the Slideshow, won't work though. It just shows one photo but won't slide.
+
+                                  *
+***
+******************************************************************** */
+
+body {
+  background: rgb(58, 58, 58);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5;
+  padding: 5;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+label {
+  display: inline-block;
+  width: 11em;
+  text-align: right;
+}
+
+p {
+  padding: 15px;
+  margin: 15px;
+}
+h2 {
+  padding: 15px;
+  margin: 15px;
+}
+h1 {
+  padding: 10px;
+  margin: 10px;
+}
+nav {
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+}
+.nav-links {
+  padding: 28px 0;
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  background: #ff3d00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/***********************************\/ CSS for FAQ page \/***************************************** */
+.faqBody {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5;
+  padding: 5;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em;
+}
+.faq-section {
+  padding: 4em 2em;
+}
+.faqi {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.faqi li {
+  background: #4a2b2b;
+  border-bottom: 1px rgb(220, 73, 73) solid;
+}
+.faqi li:first-child {
+  border-top: 1px rgb(220, 73, 73) solid;
+}
+.q {
+  padding: 1em 0;
+  border-left: 10px #868282 solid;
+  cursor: pointer;
+}
+.q:hover .q:hover .arrow {
+  border-left-color: #0569ff;
+}
+.arrow {
+  display: inline-block;
+  margin: 0 0.5em;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #555;
+  border-bottom: 6px solid transparent;
+  transition: 0.3s;
+}
+.faqi p {
+  color: #888;
+  line-height: 25px;
+}
+.n {
+  overflow: hidden;
+  height: 0;
+  padding: 0 1em 0 3.3em;
+}
+.n-opened {
+  padding: 1em 1em 2em 3.3em;
+  height: initial;
+}
+.arrow-rotated {
+  transform: rotate(90deg);
+}
+
+/***********************************\/ CSS for Slideshow \/***************************************** */
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 380px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container h1,
+h2,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  padding-bottom: 0.25em;
+  color: #d10f0f;
+}
+h2 {
+  font-size: 120%;
+  padding: 0.5em 0;
+}
+img {
+  height: 250px;
+}
+#slides img {
+  display: none;
+}
+#contact-img {
+  width: 200px auto;
+  border-radius: 20px;
+  float: center;
+  margin-right: 0;
+}
